@@ -212,6 +212,33 @@ namespace condicional_IfElse
                     Console.WriteLine($"\nA soma entre os números {numeroCalculadora1} e {numeroCalculadora2} é {divisao}");
                     break;
             }
+            Console.WriteLine("\n###### Atividade Switch  3 ######");
+            Console.WriteLine("Digite uma nota entre 0 a 10 para classificação");
+            double notaAluno = Convert.ToDouble(Console.ReadLine());
+            if (notaAluno > 0 && notaAluno <= 5)
+            {
+                Console.WriteLine("⭐");
+            }
+            else if (notaAluno > 5 && notaAluno < 8)
+            {
+                Console.WriteLine("⭐⭐");
+            }
+            else if (notaAluno >= 8 && notaAluno <= 10)
+            {
+                Console.WriteLine("⭐⭐⭐");
+            }
+            //FUNCIONA SOMENTE NO C# 8 OU SUPERIOR
+            //string conceito = notaAluno switch
+            //{
+            //    >= 9 and <= 10 => "Excelente",
+            //    >= 7 and < 9 => "Bom",
+            //    >= 5 and < 7 => "Regular",
+            //    >= 0 and < 5 => "Reprovado!",
+            //    _ => "Nota Inválida!"
+            //};
+            //Console.WriteLine(conceito);
+
+
         }
     }
 }
